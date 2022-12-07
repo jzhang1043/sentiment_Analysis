@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="background-color:rgb(126, 177, 244);text-align:center;">
+
+    <img src="images/image.jpg" width="100%" >
+
+    <h1>Sentiment Analysis</h1>
+    
+    <form action="/" id="textform" method="post" style="border:rgb(55, 54, 52); border-width:5px; border-style:solid;">
+        <label for="inputText">Please enter the text for sentiment analysis: </label><br><br>
+        <textarea id="inputText" name="inputText" rows="4" cols="50"><%= texts %></textarea> <br><br>
+        <input type="submit" value="Submit" /> <br><br>
+    </form>
+    
+    <p class="output" id="output1">The sentiment is: <%= value %></p>
+
+</body>
+</html> 
